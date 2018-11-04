@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>赣风特产</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Wish shop project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/static/styles/bootstrap4/bootstrap.min.css">
+<link href="/static/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="/static/plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="/static/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/static/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="/static/styles/responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	{{template "template/header.html" .}}
+
+	<!-- Menu -->
+
+	{{template "template/navigation.html" .}}
+
+	<!-- Home -->
+
+	<div class="home">
+		
+		<!-- Home Slider -->
+
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(/static/images/home_slider_1.jpg)"></div>
+					<div class="home_slider_content">
+						<div class="home_slider_content_inner">
+							<div class="home_slider_subtitle">美丽赣南</div>
+							<div class="home_slider_title">New Collection</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(/static/images/home_slider_1.jpg)"></div>
+					<div class="home_slider_content">
+						<div class="home_slider_content_inner">
+							<div class="home_slider_subtitle">客家风情</div>
+							<div class="home_slider_title">New Collection</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(/static/images/home_slider_1.jpg)"></div>
+					<div class="home_slider_content">
+						<div class="home_slider_content_inner">
+							<div class="home_slider_subtitle">气候宜人</div>
+							<div class="home_slider_title">New Collection</div>
+						</div>	
+					</div>
+				</div>
+
+			</div>
+			
+			<!-- Home Slider Nav -->
+
+			<div class="home_slider_next d-flex flex-column align-items-center justify-content-center"><img src="/static/images/arrow_r.png" alt=""></div>
+
+			<!-- Home Slider Dots -->
+
+			<div class="home_slider_dots_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="home_slider_dots">
+								<ul id="home_slider_custom_dots" class="home_slider_custom_dots">
+									<li class="home_slider_custom_dot active">01.<div></div></li>
+									<li class="home_slider_custom_dot">02.<div></div></li>
+									<li class="home_slider_custom_dot">03.<div></div></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	<!-- Promo -->
+
+	{{template "template/promo.html" .}}
+
+	<!-- New Arrivals -->
+
+	{{template "template/newgoods.html" .}}
+
+	<!-- Extra -->
+
+	<div class="extra clearfix">
+		<div class="extra_promo extra_promo_1">
+			<div class="extra_promo_image" style="background-image:url(/static/images/extra_1.jpg)"></div>
+			<div class="extra_1_content d-flex flex-column align-items-center justify-content-center text-center">
+				<div class="extra_1_price">30%<span>off</span></div>
+				<div class="extra_1_title">On all shoes</div>
+				<div class="extra_1_text">*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.</div>
+				<div class="button extra_1_button"><a href="/checkout">check out</a></div>
+			</div>
+		</div>
+		<div class="extra_promo extra_promo_2">
+			<div class="extra_promo_image" style="background-image:url(/static/images/extra_2.jpg)"></div>
+			<div class="extra_2_content d-flex flex-column align-items-center justify-content-center text-center">
+				<div class="extra_2_title">
+					<div class="extra_2_center">&</div>
+					<div class="extra_2_top">Mix</div>
+					<div class="extra_2_bottom">Match</div>
+				</div>
+				<div class="extra_2_text">*Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra.</div>
+				<div class="button extra_2_button"><a href="/checkout">check out</a></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Gallery -->
+
+	{{template "template/gallery.html" .}}
+
+	<!-- Testimonials -->
+
+	{{template "template/testimonials.html" .}}
+
+	<!-- Newsletter -->
+
+	{{template "template/subscribe.html" .}}
+
+	<!-- Footer -->
+
+	{{template "template/footer.html" .}}
+</div>
+
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/styles/bootstrap4/popper.js"></script>
+<script src="/static/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/static/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="/static/plugins/easing/easing.js"></script>
+<script src="/static/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="/static/plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="/static/js/custom.js"></script>
+</body>
+</html>
